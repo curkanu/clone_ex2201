@@ -16,3 +16,11 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+first_hex = mac.lower()[:4]
+one = bin(int(first_hex, 16))[2:]
+sec_hex = mac.lower()[5:9]
+two = bin(int(sec_hex, 16))[2:]
+thre_hex = mac.lower()[10:]
+three = bin(int(thre_hex, 16))[2:]
+
+print(one+two+three)
