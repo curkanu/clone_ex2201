@@ -24,3 +24,4 @@ thre_hex = mac.lower()[10:]
 three = bin(int(thre_hex, 16))[2:]
 
 print(one+two+three)
+print("test")
